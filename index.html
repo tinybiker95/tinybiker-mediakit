@@ -401,6 +401,33 @@
   .r5 { animation-delay: 0.45s; }
   .r6 { animation-delay: 0.55s; }
   .r7 { animation-delay: 0.65s; }
+  /* INSTAGRAM FEED */
+
+.feed-wrap{
+
+  margin-top:10px;
+
+  border-radius:16px;
+
+  overflow:hidden;
+
+  border:1px solid var(--border);
+
+  background:var(--surface);
+
+  padding:10px;
+
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.02),
+    0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+.lightwidget-widget{
+
+  min-height:600px;
+
+}
 </style>
 </head>
 <body>
@@ -484,7 +511,34 @@
       <div class="stat-note">↑ Ideale per brand del settore</div>
     </div>
   </div>
+<!-- INSTAGRAM FEED -->
 
+<div class="sec reveal r6">
+  <span class="sec-dot"></span>
+  Ultimi contenuti
+  <span class="sec-line"></span>
+</div>
+
+<div class="feed-wrap reveal r6">
+
+  <!-- LightWidget WIDGET -->
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+
+  <iframe
+    src="//lightwidget.com/widgets/cde72f26b3a35f3db99eb29021988519.html"
+    scrolling="no"
+    allowtransparency="true"
+    class="lightwidget-widget"
+    style="
+      width:100%;
+      border:0;
+      overflow:hidden;
+      border-radius:16px;
+      background:#0d1224;
+    ">
+  </iframe>
+
+</div>
   <!-- AUDIENCE -->
   <div class="sec reveal r3"><span class="sec-dot"></span> Audience <span class="sec-line"></span></div>
 
